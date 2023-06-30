@@ -1,0 +1,116 @@
+:root {
+    --white: #ffffff;
+    --lightgray: #f0f2f5;
+    --gray: #dfdfdf;
+    --blue: #1877f2;
+    --black: #000000;
+
+    background-color: var(--gray);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Grid format */
+/* Required CSS style */
+#top_pannel{ grid-area: top; }
+#centre_pannel{ grid-area: centre; }
+#left_pannel{ grid-area: left; }
+#right_pannel { grid-area: right; }
+
+
+.grid_main{
+    display: grid;
+    grid-template-areas:
+        'top top top'
+        'left centre right';
+}
+
+.centre_pannel{
+    background-color: var(--white);
+    height: 800px;
+}
+
+.side_pannel{
+    background-color: var(--lightgray);
+}
+
+/* buttons */
+.navigate_button{
+    transition-duration: 0.5s;
+    border: 3px solid var(--blue);
+    color: black;
+    width: 120px;
+    height: 40px;
+    background-color: white;
+}
+.navigate_button:hover{
+    background-color: var(--blue);
+    color: white;
+}
+#restart_button{
+    border: 3px solid #d12828;
+}
+
+#restart_button:hover{
+    background-color: #d12828;
+    color: white;
+}
+
+/* Drop down lists */
+#totalCholList{
+    background-color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid var(--blue);
+}
+
+#HDLCholList{
+    background-color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid var(--blue);
+}
+
+#SBPList{
+    background-color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    border: 2px solid var(--blue);
+}
+
+option{
+    font-size: 14px;
+}
+
+/* title of the webpage */
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--blue);
+}
+
+/* text below the title */
+h2{
+    text-align: center;
+    font-size: 22px;
+}
+
+#ageSlider{
+    width: 500;
+    background-color: #d12828;
+}
+
+/* instructions text */
+h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+p{
+    font-size: 22px;
+}
